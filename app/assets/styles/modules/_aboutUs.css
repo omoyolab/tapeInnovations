@@ -1,0 +1,24 @@
+.aboutUs{
+
+    margin-bottom: 10px;;
+
+    &__content{
+        margin-top: 20px;
+    }
+
+    @mixin atMedium{
+        &__content{
+            margin-top: 80px;
+        }
+    }
+   
+    &__pref{
+        margin-left: 67px;
+    }
+
+    @mixin atMedium{
+        &__pref{
+            margin-left:0;
+        }
+    }
+}

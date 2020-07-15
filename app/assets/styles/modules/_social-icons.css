@@ -1,0 +1,14 @@
+.social-icons{
+
+    float:left;
+
+
+    &__icon{
+        display: inline-block;
+        margin: 0px 0px 5px 5px;
+        float: right;
+        width: 20%;
+   
+    }
+   
+}

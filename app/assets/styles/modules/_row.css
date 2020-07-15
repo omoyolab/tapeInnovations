@@ -1,0 +1,51 @@
+.row{
+    @mixin clearFix;
+
+    @mixin atMedium{
+        &__gutters{
+            margin-right: -30px;
+        }
+    
+        &__gutters > div{
+            padding-right: 30px;
+           
+        }
+       
+        &__medium-6{
+            float: left;
+            width: 49%;
+        }
+
+    }
+
+   
+
+
+    
+    /*  Equal heigh rules*/
+    &__equal-height-at-medium{
+        @mixin atMedium{
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+        
+    }
+
+    &__equal-height-at-large{
+        @mixin atLarge{
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+        
+    }
+
+
+}

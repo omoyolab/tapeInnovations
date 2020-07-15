@@ -1,0 +1,44 @@
+.certifications{
+
+    padding: 20px 3px;
+    background-image: url("assets/images/check-background.jpg");
+    @mixin clearFix;
+   
+    
+    img{
+
+     
+       float: left;
+       padding: 4px;
+      
+
+        @mixin atMedium{
+            padding-right: 40px;
+            float: none;
+        }
+    }
+    
+
+        
+    
+
+    &__images{
+        display: inline;
+
+        @mixin atMedium{
+            text-align:center;
+            display: block;
+        }
+       
+    }
+
+    &__img-hide{
+        display: none;
+
+        @mixin atMedium{
+           display: inline;
+        }
+    }
+
+    
+}

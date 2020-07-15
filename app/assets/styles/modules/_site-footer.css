@@ -1,0 +1,9 @@
+.site-footer{
+    padding-top: 30px;
+    background-color: rgba($mainBlue, .4);
+    @mixin clearFix;
+    p{
+        float:left;
+        width: 70%;
+    }
+}
