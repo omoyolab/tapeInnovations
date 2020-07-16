@@ -2,8 +2,54 @@
     padding-top: 30px;
     background-color: rgba($mainBlue, .4);
     @mixin clearFix;
+
+
     p{
         float:left;
-        width: 70%;
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-size: .6rem;
+        text-align: center;
+        @mixin atMedium{
+            width: 70%;
+            font-size: 1rem;
+        }
     }
+
+    a{
+        padding-right: 7px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $mainBlue;
+        font-weight:600;
+
+        @mixin atMedium{
+            padding-right: 30px;
+        }
+    }
+
+    .btn{
+        text-transform: capitalize;
+        padding: .45rem .55rem;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 3px;
+        
+        @mixin atMedium{
+            margin-top: 0;
+        }
+    }
+
+    &__copy{
+        background-color: $mainBlue;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    img{
+        padding-top: 10px;
+        padding-bottom: 5px;;
+    }
+
 }

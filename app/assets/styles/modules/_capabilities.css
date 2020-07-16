@@ -1,62 +1,42 @@
 .capabilities{
     background-color: $mainBlue;
     color: #fff;
-    padding-top:45px;
+    padding-top: 8px;
     @mixin clearFix;
     margin-bottom: 0;
     
+    h2{
+      color: #fff;
+    }
 
  
 
   ul{
-     background-color: rgba(0, 0, 0, .7);
-      list-style-image: url('assets/images/gear.svg');
-      color:#fff;
+    
+        list-style-type: none;
         font-size:0.9rem;
+        line-height: 1.65;
         font-weight: 300;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
 
-  }
-    &__multi-column{
-      position: absolute;
-      left: 50px;
-      width: 80%;
-      font-size:.9rem;
-      margin-left: -10px;
-      top: 2110px;
-
-      @mixin atMedium{
-          position: absolute;
-          right: 750px;
-          left: 0px;
-          top: 1790px;
-          margin-left: 190px;
-          width: 50%;
-          font-size:1.1rem;
-          padding-bottom: 20px;
-          padding-top: 20px;
-
-          -moz-column-count: 2;
-          -moz-column-gap: 20px;
-          -moz-column-fill: auto;
-          -webkit-column-count: 2;
-          -webkit-column-gap: 20px;
-          -webkit-column-fill: auto;
-          column-count: 2;
-          column-gap: 20px;
-          column-fill: auto;
-          list-style-position: inside;
+        
+        
+        @mixin atSmall{
+          font-size: 1.125rem;
       }
-    }
+  }
+  
+
+  &__list{
+   text-align: center;
+
+  }
  
     &__list2{
-      margin-top: 370px;
      padding-bottom: 20px;
-     padding-top: 20px;
+     padding-left: 0;
 
-     @mixin atMedium{
-      margin-top: 440px;
-     }
+
 
     }
 
@@ -64,9 +44,19 @@
       padding-bottom: 10px;
   }
 
-  &__image{
-    position: relative;
-    float: right;
+ span{
+    font-size: 1.1rem;
+    color: $mainOrange;
+    font-weight: 400;
+
+    @mixin atMedium{
+      font-size: 1.9rem;
+    }
   }
+ 
 
 }
+
+
+
+        
