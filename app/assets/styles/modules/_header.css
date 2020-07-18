@@ -13,11 +13,12 @@
     @mixin atMedium{
 
         position: fixed;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba($mainBlue, .6);
         
 
         &--dark{
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(23, 51, 72, 1);
+           
         }
     }
 
@@ -36,6 +37,10 @@
          left: auto;
          transform: translateX(0);
          padding: 20px 36px;
+
+         .header--dark & {
+            transform: scale(.57);
+         }
 
 
         }

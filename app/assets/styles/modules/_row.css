@@ -30,6 +30,11 @@
             width: 33%;
         }
 
+        &__medium-8{
+            float:left;
+            width:67%
+        }
+
     }
 
    

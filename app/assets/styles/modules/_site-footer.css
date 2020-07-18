@@ -13,10 +13,12 @@
         font-weight: 300;
         font-size: .5rem ;
         width: 90%;
+        display: inline-block;
 
         @mixin atMedium{
             font-size: 1rem;
-            width: 80%;
+            width: 68%;
+           
         }
        
     }
@@ -36,26 +38,30 @@
         @mixin atMedium{
             padding-right: 30px;
             font-size: 1rem;
+            padding-left:0;
         }
     }
 
     .btn{
         text-transform: capitalize;
-        padding: .45rem .55rem;
+        padding: .40rem .45rem;
         color: #fff;
         font-weight: 400;
+        
         
         
     }
 
     &__btn{
-        margin-left:auto;
-        margin-right:auto;
+        margin-top: 0;
         display: inline-block;
-        width: 100%;
-        
-       
+
+        @mixin atMedium{
+            display:inline;
+        }
     }
+
+  
 
     &__copy{
         background-color: $mainBlue;
@@ -73,12 +79,11 @@
    
     &__social-icons{
         display: inline-block;
-       
         width: 30%;
-        margin: auto;
 
         @mixin atMedium{
             width: 20%;
+            float: right;
         }
         
    
