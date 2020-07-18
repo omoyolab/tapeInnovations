@@ -1,9 +1,8 @@
 .industries{
     padding-bottom: 10px; 
-    
-    @mixin atSmall{
-        text-align: center;
-    }
+    text-align: center;
+
+   
 
     img {
         padding:5px;

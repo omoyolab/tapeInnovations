@@ -13,6 +13,7 @@
 
        float: left;
        padding: 4px;
+       text-align: center;
 
         @mixin atMedium{
             padding-right: 40px;

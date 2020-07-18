@@ -40,6 +40,14 @@
             font-size: 1rem;
             padding-left:0;
         }
+
+        @mixin atSmall{
+            padding-right: 30px;
+            font-size: .7rem;
+            padding-left:0;
+        }
+
+
     }
 
     .btn{
@@ -74,6 +82,8 @@
         @mixin atMedium{
             font-size:1rem;
         }
+
+
     }
 
    
