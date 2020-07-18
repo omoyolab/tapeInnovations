@@ -35,18 +35,19 @@
         text-align: center;
         margin-bottom: 4px;
 
-        @mixin atMedium{
-            padding-right: 30px;
-            font-size: 1rem;
-            padding-left:0;
-        }
+        
 
         @mixin atSmall{
             padding-right: 30px;
             font-size: .7rem;
             padding-left:0;
         }
-
+        
+        @mixin atMedium{
+            padding-right: 30px;
+            font-size: 1rem;
+            padding-left:0;
+        }
 
     }
 
