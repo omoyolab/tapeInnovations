@@ -8,9 +8,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, .94);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 5;
     display: flex;
+   
 
 
     &--is-visible{
@@ -21,15 +22,25 @@
 
 
     &__inner{
-        flex: 1;
-        margin: auto;
+        margin-top: -200px;
+        margin-left: 0;
+      
+
+        @mixin atMedium{
+            flex: 1;
+            margin: -180 auto;
+        }
     }
 
     &__description{
         text-align: center;
-        font-size: 1.3rem;
+        font-size: .8rem;
         font-weight: 300;
         line-height: 1.65;
+
+        @mixin atMedium{
+            font-size: 1.3rem;
+        }
 
     }
 
@@ -46,6 +57,63 @@
         &:hover{
             color: $mainOrange;
         }
+    
+    }
+
+    form{
+       
+        font-size: .7rem;
+        width: 60%;
+        margin-left: 40px;
+       
+        @mixin atMedium{
+            text-align: center;
+             width :100%;
+             font-size: 1rem;
+
+        }
+    }
+   
+
+    input{
+        padding: 5px;
+        margin:  5px; 
+    }
+
+    input[type=submit]{
+       margin-top: 20px;
+       padding:10px 30px;
+    }
+
+    p{
+        font-size: .8rem;
+
+        @mixin atMedium{
+            font-size: 1rem;
+        }
+    }
+
+    h2{
+        
+
+        @mixin atMedium{
+            font-size: 1.9rem;
+        }
+    }
+
+  
+
+    .wrapper--narrow{
+            width: 85%;
+            overflow: hidden;
+           
+        
+            @mixin atMedium{
+                width: 60%;
+                margin: 250px auto;
+            }
+           
+          
     
     }
 

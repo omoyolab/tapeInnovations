@@ -39,7 +39,28 @@ class Modal{
         <div class="modal">
         <div class="modal__inner">
           <div class="wrapper wrapper--narrow">
-            <p class="modal__description">Contact Form will be placed here soon!</p>
+          <h2 class="headline headline__centered headline__light">We'd love to hear from you</h2>
+            <p class="modal__description">201 E. Risinger Rd Suite 101
+            Fort Worth, TX 76140
+            USA<br>
+            
+            Phone: (817) 568-1212<br>
+            Fax: (817) 568-1295<br>
+            Email: sales@tapeinnovations.com
+            </p>
+            <form>
+            <label for="fname">Full Name:</label>
+            <input type="text" placeholder="Full Name">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email">
+            <label for="phone">Phone Number:</label>
+            <input type="number" placeholder="Phone Number"><br>
+            <label for="subject">Subject:</label>
+            <input class="input__subject" type="text" placeholder="Subject"><br>
+            <h4>Your Message</h4>
+            <textarea cols="60" rows="8"></textarea><br>
+            <input type="submit" class="btn btn__orange" value="Submit">
+        </form>
           </div>
         </div>
         <div class="modal__close">X</div>

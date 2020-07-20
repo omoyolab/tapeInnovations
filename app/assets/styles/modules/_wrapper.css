@@ -5,4 +5,15 @@
     max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
+
+    &__medium{
+        max-width: 976px;
+    }
+
+    &--narrow{
+        width: 60%;
+        margin: 250px auto;
+      }
+
+
 }

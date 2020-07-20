@@ -52,14 +52,15 @@
         background-color: rgba($mainBlue, .9);
 
         @mixin atMedium{
-            color: white;
+            color: $mainBlue;
             padding: 12px 0; 
             font-size: 1rem;   
             background-color: transparent;
-            
-            &.is-current-link{
-                color: #fabb69;
-            }
+
+            .header--dark & {
+                color: #fff;
+                font-weight: 300;
+             }
         }
     }
 }
