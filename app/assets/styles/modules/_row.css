@@ -12,14 +12,19 @@
         }
 
         &__gutters-small{
-            margin-right: -10px;
+            margin-right: -45px;
         }
     
         &__gutters-small > div{
-            padding-right: 10px;
+            padding-right: 45px;
            
         }
-       
+
+        &__t-padding{
+            padding-top: 30px;
+        }
+        
+     
         &__medium-6{
             float: left;
             width: 49%;
@@ -29,6 +34,7 @@
             float: left;
             width: 33%;
         }
+        
 
         &__medium-8{
             float:left;
@@ -37,7 +43,33 @@
 
     }
 
-   
+    
+
+      /*  Equal heigh rules*/
+      &__equal-height-at-medium{
+        @mixin atMedium{
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+        
+    }
+
+    &__equal-height-at-large{
+        @mixin atLarge{
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+        
+    }
+  
 
 
    

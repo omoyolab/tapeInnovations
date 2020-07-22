@@ -4,13 +4,18 @@
 
     &__content{
         margin-top: 20px;
+
+        @mixin atMedium{
+            
+        }
     }
 
     @mixin atMedium{
         &__content{
-            margin-top: 80px;
+            margin-top: 50px;
         }
     }
+
    
     &__pref{
         margin-left: 67px;

@@ -1,0 +1,13 @@
+.page-section{
+
+
+    
+    &__no-b-padding-until-large{
+        padding-bottom: 0;
+    
+    
+        @mixin atLarge{
+            padding-bottom: 4.5rem;
+        }
+    }
+}

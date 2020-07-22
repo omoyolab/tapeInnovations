@@ -23,15 +23,7 @@ class RunAferComplie{
 }
 
 
-// let pages = fse.readdirSync('./app').filter(function(file){
-//     return file.endsWith('.html')
-// }).map(function(page){
-//     return new HtmlWebpackPlugin({
-//         filename: page,
-//         tenplate: `./app/${page}`
-//     })
 
-// })
 
     
 let cssConfig =  {
@@ -39,9 +31,20 @@ let cssConfig =  {
     use:['css-loader?url=false',{loader:'postcss-loader', options: {plugins:postCssPlugins}}]
 }
 
+let pages = fse.readdirSync('./app').filter(function(file){
+    return file.endsWith('.html')
+}).map(function(page){
+    return new HtmlWebpackPlugin({
+        filename: page,
+        template: `./app/${page}`
+    })
+
+})
+
+
 let config = {
     entry: './app/assets/scripts/App.js',
-    plugins: [new HtmlWebpackPlugin({filename: 'index.html', template: './app/index.html'})],
+    plugins: pages,
 
     module:{
         rules:[

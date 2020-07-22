@@ -10,10 +10,23 @@
         max-width: 976px;
     }
 
+
+
     &--narrow{
         width: 60%;
         margin: 250px auto;
       }
+
+      &__no-padding-until-large{
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atLarge{
+            padding-left: 18px;
+            padding-right:18px ;
+        }
+
+    }
 
 
 }
