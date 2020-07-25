@@ -1,0 +1,10 @@
+.sectionTwo{
+    background-color: $mainBlue;
+    color:#FFF;
+
+
+    h2{
+        color: $mainOrange;
+        font-weight: 350;
+    }
+}

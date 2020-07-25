@@ -18,5 +18,6 @@
 @import 'modules/_social-icons';
 @import 'modules/_modal';
 @import 'modules/_page-section';
-@import 'modules/applications/_sectionOne';
-@import 'modules/applications/_sectionTwo';
+@import 'modules/subpages/_sectionOne';
+@import 'modules/subpages/_sectionTwo';
+@import 'modules/subpages/_data-sheet';

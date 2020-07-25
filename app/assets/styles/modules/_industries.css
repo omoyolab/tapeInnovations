@@ -3,6 +3,8 @@
     text-align: center;
     margin-bottom: 15px;
     @mixin clearFix;
+    margin-left: 10px;
+    margin-right: 10px;
 
     @mixin atSmall{
         float: left;

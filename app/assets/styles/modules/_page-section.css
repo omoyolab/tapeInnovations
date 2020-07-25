@@ -10,4 +10,8 @@
             padding-bottom: 4.5rem;
         }
     }
+
+    &__blue{
+        background-color: $mainBlue;
+    }
 }

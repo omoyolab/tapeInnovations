@@ -1,0 +1,14 @@
+.sectionOne{
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+
+  &__subtitle{
+      font-weight: 400;
+      text-align: center;
+      color: $mainOrange;
+  }
+
+
+
+}
