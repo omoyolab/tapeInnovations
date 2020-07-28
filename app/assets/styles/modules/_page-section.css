@@ -14,4 +14,9 @@
     &__blue{
         background-color: $mainBlue;
     }
+
+    &__grey{
+        background-color: rgba(147, 150, 159, .2);
+        margin-top: 10px;
+    }
 }
