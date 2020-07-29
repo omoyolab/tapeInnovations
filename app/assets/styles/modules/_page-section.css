@@ -18,5 +18,6 @@
     &__grey{
         background-color: rgba(147, 150, 159, .2);
         margin-top: 10px;
+        padding-bottom: 10px;
     }
 }
