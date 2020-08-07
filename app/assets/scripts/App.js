@@ -2,6 +2,11 @@ import '../styles/styles.css' // importing the stylesheet
 import MobileMenu from './modules/MobileMenu'
 import StickyHeader from './modules/StickyHeader'
 
+var $ = require('jquery');
+window.jQuery = $;
+window.$ = $;
+
+import './modules/popup.js';
 
 
 
