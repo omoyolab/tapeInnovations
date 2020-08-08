@@ -5,7 +5,8 @@ $(document).ready(function() {
     
     $('.mtr-lm').click(function() {
         $('.pop-up').show(1000);
-        $('.html-container').prepend($(this).parent().parent().html())
+        $('.html-container').prepend($(this).parent().parent().html());
+        $('.pop-up p').removeClass('limit-text');
     });
 
 
