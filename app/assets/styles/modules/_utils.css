@@ -1,4 +1,9 @@
 /* Style the tab */
+
+.tab-container {
+    /* text-align: center; */
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
