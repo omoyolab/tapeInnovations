@@ -15,7 +15,4 @@ $(document).ready(function() {
         $('.html-container').empty();
     })
 
-
-    
-
 })

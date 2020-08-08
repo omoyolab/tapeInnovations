@@ -7,6 +7,7 @@ window.jQuery = $;
 window.$ = $;
 
 import './modules/popup.js';
+import './modules/utils.js';
 
 
 
