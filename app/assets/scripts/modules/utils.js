@@ -16,6 +16,9 @@ var $ = require('jquery');
 
 
 $(document).ready(function() {
+
+    $('#firstbtn').addClass('active');
+    $('#firstcontent').show(1000);
     
     $('.tablinks').click(function() {
 
