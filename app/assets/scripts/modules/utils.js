@@ -18,7 +18,7 @@ var $ = require('jquery');
 $(document).ready(function() {
 
     $('#firstbtn').addClass('active');
-    $('#firstcontent').show(1000);
+    $('#firstcontent').show();
     
     $('.tablinks').click(function() {
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         // document.getElementById(cityName).style.display = "block";
-        $("#"+$(this).attr('data-target')).show(1000);
+        $("#"+$(this).attr('data-target')).show();
         // evt.currentTarget.className += " active";
         $(this).addClass("active")
 
