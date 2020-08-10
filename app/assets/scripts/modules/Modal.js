@@ -1,74 +1,34 @@
-class Modal{
-    constructor(){
-        this.injectHTML()
-        this.modal = document.querySelector(".modal")
-        this.closeIcon = document.querySelector(".modal__close")
-        this.events()
-    }
+var $ = require('jquery');
 
 
+$(document).ready(function() {
 
-    events(){
-        //Listen for close click
-        this.closeIcon.addEventListener("click", () => this.closeTheModal())
+    // insert the contact page onload first
 
-
-        // Pushes any key
-        document.addEventListener("keyup", e => this.keyPressHandler(e))
-    }
-
-    keyPressHandler(e){
-        if(e.keyCode == 27){
-            this.closeTheModal()
-        }
-    }
-
-
-    openTheModal(){
-        this.modal.classList.add("modal--is-visible")
-    }
-
-
-    closeTheModal(){
-        this.modal.classList.remove("modal--is-visible")
-    }
-
-
-    injectHTML(){
-        document.body.insertAdjacentHTML('beforeend',`
-        <div class="modal">
-        <div class="modal__inner">
-          <div class="wrapper wrapper--narrow">
-          <h2 class="headline headline__centered headline__light">We'd love to hear from you</h2>
-            <p class="modal__description">201 E. Risinger Rd Suite 101
-            Fort Worth, TX 76140
-            USA<br>
-            
-            Phone: (817) 568-1212<br>
-            Fax: (817) 568-1295<br>
-            Email: sales@tapeinnovations.com
-            </p>
-            <form>
-            <label for="fname">Full Name:</label>
-            <input type="text" placeholder="Full Name">
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Email">
-            <label for="phone">Phone Number:</label>
-            <input type="number" placeholder="Phone Number"><br>
-            <label for="subject">Subject:</label>
-            <input class="input__subject" type="text" placeholder="Subject"><br>
-            <h4>Your Message</h4>
-            <textarea cols="60" rows="8"></textarea><br>
-            <input type="submit" class="btn btn__orange" value="Submit">
-        </form>
-          </div>
+    var html = `
+    <div id="cotact-modal" class="custom-modal">
+        <div class="close-modal">
+            <span>X</span>
         </div>
-        <div class="modal__close">X</div>
-      </div>
-        `)
-    }
+        <div class="html-container">
+            <h1>hellod</h1>
+        </div>
+    </div>
 
-}
+    `
+
+    $('body').prepend(html);
 
 
-export default Modal
+    
+    $('.open-modal').click(function() {
+        $('#cotact-modal').show()
+    });
+
+
+    // $('.close-popup').click(function() {
+    //     $('.pop-up').hide(1000);
+    //     $('.html-container').empty();
+    // })
+
+})
