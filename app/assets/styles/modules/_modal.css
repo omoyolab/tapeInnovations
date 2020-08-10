@@ -67,8 +67,14 @@
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     .custom-modal {
         width: 100%;
+    }
+
+    .contact form {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
