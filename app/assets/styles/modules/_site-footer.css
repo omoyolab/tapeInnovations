@@ -117,6 +117,7 @@
     /* color: white; */
     color: teal;
     line-height: 0px;
+    font-size: 1.875rem;
 }
 
 .certificate {
@@ -165,7 +166,7 @@
     }
 
     .certificate .c-item img {
-        height: 80px;
+        height: 40px;
     }
 
     .certificate {
