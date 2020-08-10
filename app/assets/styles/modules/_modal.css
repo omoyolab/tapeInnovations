@@ -1,153 +1,80 @@
-.modal{
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.2);
-    transition:  all .3s ease-out;
-    position: fixed;
-    top: 0;
-    bottom: 0;
+.custom-modal {
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    /* padding-top: 100px; Location of the box */
+    /* padding-left: 200px;
+    padding-right: 200px; */
     left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 5;
-    display: flex;
-    overflow: scroll;
-   
-
-
-    &--is-visible{
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-    }
-
-
-    &__inner{
-        margin-top: -200px;
-        margin-left: 0;
-      
-
-        @mixin atMedium{
-            flex: 1;
-            margin: -180 auto;
-        }
-    }
-
-    &__description{
-        text-align: center;
-        font-size: .8rem;
-        font-weight: 300;
-        line-height: 1.65;
-
-        @mixin atMedium{
-            font-size: 1.3rem;
-        }
-
-    }
-
-    &__close{
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 2rem;
-        color: $mainBlue;
-        transform: scaleX(1.2);
-        transform-origin: 100% 0;
-        cursor: pointer;
-
-        &:hover{
-            color: $mainOrange;
-        }
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    background-color: white;
     
-    }
+    /* margin-left: 20%;
+    margin-right: 20%; */
 
-    form{
-       
-        font-size: .7rem;
-        width: 60%;
-        margin-left: 40px;
-       
-        @mixin atMedium{
-            text-align: center;
-             width :100%;
-             font-size: 1rem;
+    text-align: center;
+    display: none;
 
-        }
-    }
-   
+}
 
-    input{
-        padding: 5px;
-        margin:  5px; 
-    }
 
-    input[type=submit]{
-       margin-top: 20px;
-       padding:10px 30px;
-    }
 
-    p{
-        font-size: .8rem;
+.custom-modal .close-modal {
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
 
-        @mixin atMedium{
-            font-size: 1rem;
-        }
-    }
+.custom-modal .close-modal span {
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
 
-    h2{
-        
 
-        @mixin atMedium{
-            font-size: 1.9rem;
-        }
-    }
+.contact input, textarea {
+    width: 100%;
+    text-align: center;
+}
 
-  
+.contact input {
+    height: 30px;
+    margin-bottom: 20px;
+}
 
-    .wrapper--narrow{
-            width: 85%;
-            overflow: hidden;
-           
-        
-            @mixin atMedium{
-                width: 60%;
-                margin: 250px auto;
-            }
-           
-          
-    
-    }
+.contact button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(213, 149, 65);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
 
-    form {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+.contact form {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
 
-    @media only screen and (max-width: 600px) {
-        form {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-    }
 
-    input {
+@media only screen and (max-width: 700px) {
+    .custom-modal {
         width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
     }
 
-    textarea {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+    .contact form {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-
-}   
+}
