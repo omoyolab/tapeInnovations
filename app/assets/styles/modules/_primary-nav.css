@@ -53,9 +53,10 @@
         background-color: rgba($mainBlue, .9);
 
         @mixin atMedium{
-            color: $mainBlue;
+            color: #0C1245;
             padding: 12px 0; 
-            font-size: 1rem;   
+            font-size: 1.1rem; 
+            font-weight: 500;  
             background-color: transparent;
 
             .header--dark & {

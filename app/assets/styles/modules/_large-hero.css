@@ -7,11 +7,11 @@
     &__text-content{
         padding-top: 80px;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 0;
         width: 100%;
         text-align:center;
-        transform: translateY(-50%);
+        transform: translateY(-60%);
         
         
     }
@@ -31,7 +31,7 @@
     
         @mixin atSmall{
             font-size:1.875rem;
-            font-weight: 300;
+            font-weight: 400;
         }
     }
 }
