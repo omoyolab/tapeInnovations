@@ -96,6 +96,9 @@
     transform: scale(1);
     background: #3a344887;
   }
+.card-title{
+  text-align: center;
+}
 }
     .card-img-overlay {
       justify-content: center;
